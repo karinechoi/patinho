@@ -12,10 +12,10 @@
     }
   ],
   "routes": [
+    { "src": "/api/(.*)", "dest": "produtoWebserver/wsgi.py" },
     { "src": "/(.*)", "dest": "produtoWebserver/wsgi.py" }
   ],
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/choose-profile", "destination": "/choose-profile.html" },
     { "source": "/", "destination": "/signup.html" },
     { "source": "/login", "destination": "/login.html" },
