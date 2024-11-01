@@ -1,5 +1,8 @@
 {
     "scripts": {
-      "deploy": "vercel --prod"
+        "deploy": "vercel --prod"
+    },
+    "dependencies": {
+        "@vercel/edge-config": "^1.3.0"
     }
-  }
+}
